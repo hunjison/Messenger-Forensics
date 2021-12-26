@@ -19,7 +19,7 @@ We use `python3` to all scripts and write description based on our paper.
 
 ### Signal Decryption
 - Signal's decryption process is described in Table 2.
-- We developed an [app](Signal/XXX) that can steal the key of Signal’s Android Keystore. This app can do `Step1` process. With the decrypted `pref_database_encrypted_secret` output from the app, we can decrypt the database.
+- We developed an [APP](https://github.com/hunjison/Signal-Extract-AndroidKeyStore) that can steal the key of Signal’s Android Keystore. This app can do `Step1` process. With the decrypted `pref_database_encrypted_secret` output from the app, we can decrypt the database.
 - [signal_getMultimedia.py](Signal/signal_getMultimedia.py) can do `Step2` and `Step3` process and extract the multimedia decryption key. This file requires output from the app.
 - [signal_log_decrypt.py](Signal/signal_log_decrypt.py) can do `Step4` process and extract the log decryption key. This file requires output from the app.
 
