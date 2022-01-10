@@ -44,3 +44,4 @@ Whenever the decryption algorithm of these messengers changes, we will leave a n
 
 - 2021.09.23 First commit
 - 2021.12.26 Add description(code not changed)
+- 2022.01.10 Correct some mistakes on Wickr. Algorithm not changed.
