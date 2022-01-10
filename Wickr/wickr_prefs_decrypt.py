@@ -58,7 +58,7 @@ if __name__ == "__main__":
       log_file = f.read()                     
 
     # READ android_id(settings_ssaid.xml)
-    with open(r"C:\Users\esby9\Desktop\Signal\[PAPER]EXPERIMENT\FileTEST(A20e)\com.mywickr.wickr2\settings_ssaid.xml") as f:
+    with open(android_id_PATH) as f:
       xml = f.read()
     tree = ET.fromstring(re.sub(r"(<\?xml[^>]+\?>)", r"\1<root>", xml) + "</root>")
     wickr_setting = tree.find('./settings/setting[@package="com.mywickr.wickr2"]') # if error occurs, try "com.mywickr.wickr2-1"
